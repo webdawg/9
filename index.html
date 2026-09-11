@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Whole Time — a picture book</title>
+<meta name="description" content="A picture book about a young ape lost on the forest floor, and the parent who never stopped watching over them.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="license-badge" href="LICENSE">AGPL-3.0-or-later</a>
+<div class="app">
+  <div class="stage">
+    <div class="book" id="book">
+
+      <!-- 0: COVER -->
+      <div class="page cover" data-mode="dark">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="cvSky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#ffd166"/>
+                  <stop offset="0.5" stop-color="#f4a261"/>
+                  <stop offset="1" stop-color="#1f4d2a"/>
+                </linearGradient>
+              </defs>
+              <rect width="800" height="500" fill="url(#cvSky)"/>
+              <circle cx="630" cy="110" r="72" fill="#fff3b0" opacity="0.85"/>
+              <path d="M0 390 Q100 320 200 370 Q300 310 400 370 Q500 300 600 365 Q700 310 800 380 L800 500 L0 500 Z" fill="#173a20"/>
+              <g fill="#2f6b3c" opacity="0.9">
+                <circle cx="110" cy="260" r="65"/>
+                <circle cx="700" cy="240" r="78"/>
+                <circle cx="430" cy="200" r="55"/>
+                <circle cx="40" cy="200" r="50"/>
+              </g>
+              <path d="M-20 300 Q300 250 820 305" stroke="#2a1608" stroke-width="26" fill="none" stroke-linecap="round"/>
+              <path d="M240 302 q8 60 -12 125" stroke="#173a20" stroke-width="6" fill="none"/>
+              <path d="M540 300 q-12 70 10 135" stroke="#173a20" stroke-width="6" fill="none"/>
+              <g transform="translate(320,255)" fill="#1a1108">
+                <ellipse cx="0" cy="24" rx="34" ry="42"/>
+                <circle cx="0" cy="-26" r="28"/>
+                <circle cx="-24" cy="-38" r="9"/>
+                <circle cx="24" cy="-38" r="9"/>
+                <path d="M-28 0 Q-60 20 -66 60" stroke="#1a1108" stroke-width="15" fill="none" stroke-linecap="round"/>
+                <path d="M28 -4 Q64 -18 92 -8" stroke="#1a1108" stroke-width="15" fill="none" stroke-linecap="round"/>
+                <path d="M-16 44 Q-26 78 -18 100" stroke="#1a1108" stroke-width="16" fill="none" stroke-linecap="round"/>
+                <path d="M16 44 Q26 78 18 100" stroke="#1a1108" stroke-width="16" fill="none" stroke-linecap="round"/>
+              </g>
+              <g transform="translate(400,235) scale(0.62)" fill="#1a1108">
+                <ellipse cx="0" cy="24" rx="34" ry="42"/>
+                <circle cx="0" cy="-26" r="28"/>
+                <circle cx="-24" cy="-38" r="9"/>
+                <circle cx="24" cy="-38" r="9"/>
+                <path d="M-28 -6 Q-64 -20 -96 -6" stroke="#1a1108" stroke-width="15" fill="none" stroke-linecap="round"/>
+                <path d="M28 2 Q58 24 60 62" stroke="#1a1108" stroke-width="15" fill="none" stroke-linecap="round"/>
+                <path d="M-16 44 Q-30 74 -40 100" stroke="#1a1108" stroke-width="16" fill="none" stroke-linecap="round"/>
+                <path d="M16 44 Q10 78 22 102" stroke="#1a1108" stroke-width="16" fill="none" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </div>
+          <div class="cover-title">
+            <h1>The Whole Time</h1>
+            <p>a story of the canopy, the ground, and the love that follows you down</p>
+          </div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 1: TITLE PAGE -->
+      <div class="page" data-mode="light">
+        <div class="face front">
+          <div class="title-page" style="height:100%;">
+            <h2>The Whole Time</h2>
+            <div class="sub">a picture book</div>
+            <svg class="vine" viewBox="0 0 120 24"><path d="M0 12 Q30 0 60 12 T120 12" stroke="#2f6b3c" stroke-width="3" fill="none"/><circle cx="15" cy="7" r="4" fill="#4c9a4a"/><circle cx="60" cy="12" r="4" fill="#4c9a4a"/><circle cx="105" cy="7" r="4" fill="#4c9a4a"/></svg>
+            <p class="dedication">For every kid who ever looked down and couldn't find the branch they came from — and for everyone waiting quietly above, watching the whole time.</p>
+          </div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 2: CANOPY FUN 1 -->
+      <div class="page" data-mode="light">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe9ff"/><stop offset="1" stop-color="#eaffb0"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s2)"/>
+              <circle cx="120" cy="90" r="55" fill="#fff3b0"/>
+              <g stroke="#fff3b0" stroke-width="4" opacity="0.7">
+                <line x1="120" y1="15" x2="120" y2="0"/><line x1="120" y1="165" x2="120" y2="180"/>
+                <line x1="45" y1="90" x2="30" y2="90"/><line x1="195" y1="90" x2="210" y2="90"/>
+              </g>
+              <path d="M0 440 Q400 500 800 440 L800 500 L0 500 Z" fill="#3f8a4c"/>
+              <path d="M-30 120 Q400 40 830 150" stroke="#5a3620" stroke-width="30" fill="none" stroke-linecap="round"/>
+              <path d="M-20 320 Q400 260 820 330" stroke="#4a2c18" stroke-width="24" fill="none" stroke-linecap="round"/>
+              <g fill="#4c9a4a"><circle cx="90" cy="150" r="70"/><circle cx="700" cy="130" r="80"/><circle cx="400" cy="90" r="60"/><circle cx="250" cy="330" r="60"/><circle cx="600" cy="360" r="70"/></g>
+              <path d="M300 155 q6 60 -6 130" stroke="#2f6b3c" stroke-width="6" fill="none"/>
+              <path d="M480 148 q-8 70 8 140" stroke="#2f6b3c" stroke-width="6" fill="none"/>
+              <!-- parent swinging from vine -->
+              <g transform="translate(300,255) rotate(-18)">
+                <ellipse cx="0" cy="22" rx="34" ry="42" fill="#4a3728"/>
+                <circle cx="-24" cy="-36" r="10" fill="#4a3728"/><circle cx="24" cy="-36" r="10" fill="#4a3728"/>
+                <circle cx="0" cy="-28" r="30" fill="#4a3728"/>
+                <ellipse cx="0" cy="-16" rx="14" ry="10" fill="#d9b98a"/>
+                <circle cx="-8" cy="-30" r="3" fill="#20140a"/><circle cx="8" cy="-30" r="3" fill="#20140a"/>
+                <path d="M-8 -10 Q0 -4 8 -10" stroke="#20140a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M-30 -6 Q-10 -60 6 -95" stroke="#4a3728" stroke-width="14" fill="none" stroke-linecap="round"/>
+                <path d="M30 0 Q60 10 58 44" stroke="#4a3728" stroke-width="14" fill="none" stroke-linecap="round"/>
+                <path d="M-16 50 Q-26 84 -14 108" stroke="#4a3728" stroke-width="15" fill="none" stroke-linecap="round"/>
+                <path d="M16 50 Q30 82 42 100" stroke="#4a3728" stroke-width="15" fill="none" stroke-linecap="round"/>
+              </g>
+              <!-- kid swinging beside, mid-air joyful -->
+              <g transform="translate(470,300) rotate(12) scale(0.66)">
+                <ellipse cx="0" cy="22" rx="34" ry="42" fill="#8a6239"/>
+                <circle cx="-24" cy="-36" r="10" fill="#8a6239"/><circle cx="24" cy="-36" r="10" fill="#8a6239"/>
+                <circle cx="0" cy="-28" r="30" fill="#8a6239"/>
+                <ellipse cx="0" cy="-16" rx="14" ry="10" fill="#eddcb8"/>
+                <circle cx="-8" cy="-30" r="3" fill="#20140a"/><circle cx="8" cy="-30" r="3" fill="#20140a"/>
+                <path d="M-9 -8 Q0 4 9 -8" stroke="#20140a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M-30 -4 Q-64 -30 -70 -70" stroke="#8a6239" stroke-width="14" fill="none" stroke-linecap="round"/>
+                <path d="M30 -4 Q64 -30 70 -70" stroke="#8a6239" stroke-width="14" fill="none" stroke-linecap="round"/>
+                <path d="M-16 50 Q-30 80 -20 106" stroke="#8a6239" stroke-width="15" fill="none" stroke-linecap="round"/>
+                <path d="M16 50 Q30 80 20 106" stroke="#8a6239" stroke-width="15" fill="none" stroke-linecap="round"/>
+              </g>
+              <g fill="#e76f51" opacity="0.9"><circle cx="180" cy="360" r="10"/><circle cx="205" cy="375" r="10"/><circle cx="640" cy="230" r="9"/></g>
+            </svg>
+          </div>
+          <div class="textbar">High in the green, where the wind lives, Little Mo swung beside Big Koba every single morning.</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 3: CANOPY FUN 2 -->
+      <div class="page" data-mode="light">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a6ddff"/><stop offset="1" stop-color="#d8f3a0"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s3)"/>
+              <path d="M0 430 Q400 480 800 430 L800 500 L0 500 Z" fill="#3f8a4c"/>
+              <path d="M-30 150 Q400 90 830 170" stroke="#5a3620" stroke-width="30" fill="none" stroke-linecap="round"/>
+              <g fill="#4c9a4a"><circle cx="140" cy="180" r="75"/><circle cx="660" cy="160" r="85"/><circle cx="400" cy="110" r="60"/></g>
+              <g fill="#8fd672" opacity="0.9">
+                <ellipse cx="230" cy="260" rx="14" ry="9"/><ellipse cx="260" cy="280" rx="14" ry="9"/>
+                <ellipse cx="520" cy="250" rx="14" ry="9"/><ellipse cx="560" cy="270" rx="14" ry="9"/>
+              </g>
+              <!-- kid chasing, arms out, running pose on branch -->
+              <g transform="translate(430,340) scale(0.85)">
+                <ellipse cx="0" cy="22" rx="34" ry="42" fill="#8a6239"/>
+                <circle cx="-24" cy="-36" r="10" fill="#8a6239"/><circle cx="24" cy="-36" r="10" fill="#8a6239"/>
+                <circle cx="0" cy="-28" r="30" fill="#8a6239"/>
+                <ellipse cx="0" cy="-16" rx="14" ry="10" fill="#eddcb8"/>
+                <circle cx="-8" cy="-30" r="3" fill="#20140a"/><circle cx="8" cy="-30" r="3" fill="#20140a"/>
+                <path d="M-9 -8 Q0 4 9 -8" stroke="#20140a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M-30 -6 Q-66 -14 -80 6" stroke="#8a6239" stroke-width="14" fill="none" stroke-linecap="round"/>
+                <path d="M30 -6 Q60 -22 56 -50" stroke="#8a6239" stroke-width="14" fill="none" stroke-linecap="round"/>
+                <path d="M-16 50 Q-40 66 -50 98" stroke="#8a6239" stroke-width="15" fill="none" stroke-linecap="round"/>
+                <path d="M16 50 Q34 62 24 96" stroke="#8a6239" stroke-width="15" fill="none" stroke-linecap="round"/>
+              </g>
+              <!-- parent chasing behind, laughing, letting kid win -->
+              <g transform="translate(220,335) scale(1.05)">
+                <ellipse cx="0" cy="22" rx="34" ry="42" fill="#4a3728"/>
+                <circle cx="-24" cy="-36" r="10" fill="#4a3728"/><circle cx="24" cy="-36" r="10" fill="#4a3728"/>
+                <circle cx="0" cy="-28" r="30" fill="#4a3728"/>
+                <ellipse cx="0" cy="-16" rx="14" ry="10" fill="#d9b98a"/>
+                <circle cx="-8" cy="-30" r="3" fill="#20140a"/><circle cx="8" cy="-30" r="3" fill="#20140a"/>
+                <path d="M-9 -10 Q0 0 9 -10" stroke="#20140a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M-30 -6 Q-60 -10 -70 14" stroke="#4a3728" stroke-width="14" fill="none" stroke-linecap="round"/>
+                <path d="M30 -6 Q56 -18 50 -46" stroke="#4a3728" stroke-width="14" fill="none" stroke-linecap="round"/>
+                <path d="M-16 50 Q-34 66 -40 98" stroke="#4a3728" stroke-width="15" fill="none" stroke-linecap="round"/>
+                <path d="M16 50 Q30 62 20 96" stroke="#4a3728" stroke-width="15" fill="none" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </div>
+          <div class="textbar">They chased each other through leaves shaped like little green hands — and Koba always let Little Mo win. Almost always.</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 4: CANOPY FUN 3 (nest at dusk) -->
+      <div class="page" data-mode="dark">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2d5c"/><stop offset="1" stop-color="#6b3f6b"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s4)"/>
+              <g fill="#fff3b0"><circle cx="120" cy="80" r="3"/><circle cx="220" cy="140" r="2"/><circle cx="600" cy="70" r="3"/><circle cx="700" cy="150" r="2"/><circle cx="480" cy="60" r="2"/><circle cx="330" cy="110" r="2"/><circle cx="90" cy="200" r="2"/></g>
+              <circle cx="660" cy="110" r="46" fill="#fdf6e3" opacity="0.9"/>
+              <path d="M0 430 Q400 480 800 430 L800 500 L0 500 Z" fill="#1f2b40"/>
+              <path d="M-30 260 Q400 210 830 270" stroke="#3a2416" stroke-width="30" fill="none" stroke-linecap="round"/>
+              <ellipse cx="400" cy="330" rx="210" ry="60" fill="#6b4a2c"/>
+              <ellipse cx="400" cy="320" rx="190" ry="48" fill="#8a6239"/>
+              <g fill="#2f6b3c" opacity="0.8"><circle cx="120" cy="230" r="60"/><circle cx="690" cy="220" r="65"/></g>
+              <!-- parent curled, kid nestled against -->
+              <g transform="translate(340,330) scale(1.05)">
+                <ellipse cx="0" cy="10" rx="55" ry="38" fill="#4a3728"/>
+                <circle cx="-40" cy="-14" r="26" fill="#4a3728"/>
+                <ellipse cx="-40" cy="-4" rx="12" ry="9" fill="#d9b98a"/>
+                <circle cx="-46" cy="-16" r="2.6" fill="#20140a"/><circle cx="-34" cy="-16" r="2.6" fill="#20140a"/>
+              </g>
+              <g transform="translate(430,336) scale(0.75)">
+                <ellipse cx="0" cy="10" rx="46" ry="30" fill="#8a6239"/>
+                <circle cx="-30" cy="-10" r="20" fill="#8a6239"/>
+                <ellipse cx="-30" cy="-2" rx="9" ry="7" fill="#eddcb8"/>
+                <circle cx="-24" cy="1" r="2" fill="#20140a"/>
+              </g>
+            </svg>
+          </div>
+          <div class="textbar">At night they curled into a nest as soft as a cloud, and Koba told stories about the stars that got stuck in the leaves.</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 5: TRANSITION - butterfly -->
+      <div class="page" data-mode="light">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cdeaff"/><stop offset="1" stop-color="#eaffb0"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s5)"/>
+              <circle cx="150" cy="90" r="55" fill="#fff3b0"/>
+              <path d="M0 430 Q400 480 800 430 L800 500 L0 500 Z" fill="#3f8a4c"/>
+              <path d="M-30 180 Q400 120 830 190" stroke="#5a3620" stroke-width="30" fill="none" stroke-linecap="round"/>
+              <g fill="#4c9a4a"><circle cx="120" cy="210" r="70"/><circle cx="700" cy="190" r="80"/></g>
+              <!-- parent dozing -->
+              <g transform="translate(230,300)">
+                <ellipse cx="0" cy="18" rx="42" ry="34" fill="#4a3728"/>
+                <circle cx="10" cy="-10" r="26" fill="#4a3728"/>
+                <ellipse cx="16" cy="-2" rx="11" ry="8" fill="#d9b98a"/>
+                <path d="M6 -14 Q14 -10 22 -14" stroke="#20140a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M40 4 z" fill="none"/>
+              </g>
+              <!-- kid tiptoeing away, looking at butterfly -->
+              <g transform="translate(460,270) scale(0.75)">
+                <ellipse cx="0" cy="22" rx="34" ry="42" fill="#8a6239"/>
+                <circle cx="-24" cy="-36" r="10" fill="#8a6239"/><circle cx="24" cy="-36" r="10" fill="#8a6239"/>
+                <circle cx="0" cy="-28" r="30" fill="#8a6239"/>
+                <ellipse cx="8" cy="-18" rx="13" ry="10" fill="#eddcb8"/>
+                <circle cx="0" cy="-32" r="3" fill="#20140a"/><circle cx="16" cy="-32" r="3" fill="#20140a"/>
+                <path d="M20 -50 Q40 -70 60 -66" stroke="#8a6239" stroke-width="13" fill="none" stroke-linecap="round"/>
+                <path d="M-30 -6 Q-50 6 -46 30" stroke="#8a6239" stroke-width="13" fill="none" stroke-linecap="round"/>
+                <path d="M-16 50 Q-10 80 4 100" stroke="#8a6239" stroke-width="15" fill="none" stroke-linecap="round"/>
+                <path d="M16 50 Q26 78 44 96" stroke="#8a6239" stroke-width="15" fill="none" stroke-linecap="round"/>
+              </g>
+              <g transform="translate(560,180)">
+                <path d="M0 0 Q-20 -20 -6 -34 Q10 -22 0 0Z" fill="#e76f51"/>
+                <path d="M0 0 Q20 -20 6 -34 Q-10 -22 0 0Z" fill="#f4a261"/>
+                <path d="M0 0 Q-16 20 -4 32 Q8 20 0 0Z" fill="#e9c46a"/>
+                <path d="M0 0 Q16 20 4 32 Q-8 20 0 0Z" fill="#f4a261"/>
+              </g>
+            </svg>
+          </div>
+          <div class="textbar">One bright morning, while Koba dozed in the sun, Little Mo spotted a butterfly with wings like stained glass — and followed it just a little too far.</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 6: THE FALL -->
+      <div class="page" data-mode="dark">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eaffb0"/><stop offset="0.4" stop-color="#4c9a4a"/><stop offset="1" stop-color="#3a2a15"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s6)"/>
+              <g stroke="#2f6b3c" stroke-width="10" fill="none" opacity="0.8">
+                <path d="M100 0 L60 500"/><path d="M700 0 L740 500"/><path d="M400 0 L420 500"/>
+              </g>
+              <g fill="#3f8a4c" opacity="0.7"><ellipse cx="150" cy="120" rx="70" ry="30"/><ellipse cx="650" cy="200" rx="80" ry="34"/><ellipse cx="380" cy="60" rx="60" ry="26"/></g>
+              <path d="M370 40 L340 55 L400 55 Z" fill="#5a3620"/>
+              <g transform="translate(400,260) rotate(35)">
+                <ellipse cx="0" cy="22" rx="30" ry="38" fill="#8a6239"/>
+                <circle cx="-22" cy="-30" r="9" fill="#8a6239"/><circle cx="22" cy="-30" r="9" fill="#8a6239"/>
+                <circle cx="0" cy="-22" r="27" fill="#8a6239"/>
+                <ellipse cx="0" cy="-12" rx="12" ry="9" fill="#eddcb8"/>
+                <circle cx="-7" cy="-24" r="3" fill="#20140a"/><circle cx="7" cy="-24" r="3" fill="#20140a"/>
+                <path d="M-8 -4 Q0 4 8 -4" stroke="#20140a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M-26 -10 Q-50 -40 -40 -66" stroke="#8a6239" stroke-width="12" fill="none" stroke-linecap="round"/>
+                <path d="M26 -10 Q50 -30 46 -60" stroke="#8a6239" stroke-width="12" fill="none" stroke-linecap="round"/>
+                <path d="M-14 44 Q-24 70 -10 92" stroke="#8a6239" stroke-width="13" fill="none" stroke-linecap="round"/>
+                <path d="M14 44 Q24 66 40 82" stroke="#8a6239" stroke-width="13" fill="none" stroke-linecap="round"/>
+              </g>
+              <g stroke="#e9f5c8" stroke-width="3" opacity="0.6"><path d="M420 220 l10 20"/><path d="M460 250 l14 22"/><path d="M380 300 l-12 18"/></g>
+              <path d="M0 460 Q400 420 800 460 L800 500 L0 500 Z" fill="#2a1c10"/>
+            </svg>
+          </div>
+          <div class="textbar">A branch cracked. The world spun green, then brown, then still.</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 7: GROUND CONFUSION -->
+      <div class="page" data-mode="light">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s7" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cdd9c0"/><stop offset="1" stop-color="#a9764f"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s7)"/>
+              <path d="M0 300 Q400 260 800 300 L800 500 L0 500 Z" fill="#8a6239"/>
+              <path d="M0 300 Q400 260 800 300 L800 320 Q400 280 0 320 Z" fill="#6b4a2c"/>
+              <g stroke="#5a3620" stroke-width="70" stroke-linecap="round">
+                <line x1="60" y1="0" x2="60" y2="300"/><line x1="740" y1="0" x2="740" y2="300"/>
+              </g>
+              <g fill="#a9764f" opacity="0.6"><ellipse cx="250" cy="360" rx="70" ry="14"/><ellipse cx="560" cy="400" rx="90" ry="16"/></g>
+              <g fill="#7a9c5c"><path d="M180 320 q4 -24 14 0Z"/><path d="M200 322 q4 -20 12 0Z"/><path d="M600 330 q4 -22 14 0Z"/></g>
+              <g transform="translate(400,330) scale(0.85)">
+                <ellipse cx="0" cy="22" rx="34" ry="42" fill="#8a6239"/>
+                <circle cx="-24" cy="-36" r="10" fill="#8a6239"/><circle cx="24" cy="-36" r="10" fill="#8a6239"/>
+                <circle cx="0" cy="-28" r="30" fill="#8a6239"/>
+                <ellipse cx="0" cy="-16" rx="14" ry="10" fill="#eddcb8"/>
+                <circle cx="-9" cy="-32" r="4" fill="#20140a"/><circle cx="9" cy="-32" r="4" fill="#20140a"/>
+                <ellipse cx="0" cy="-15" rx="5" ry="6" fill="#20140a" opacity="0"/>
+                <path d="M-8 -6 Q0 -12 8 -6" stroke="#20140a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M-30 -6 Q-46 4 -44 28" stroke="#8a6239" stroke-width="14" fill="none" stroke-linecap="round"/>
+                <path d="M30 -6 Q46 4 44 28" stroke="#8a6239" stroke-width="14" fill="none" stroke-linecap="round"/>
+                <path d="M-16 50 Q-24 78 -16 100" stroke="#8a6239" stroke-width="15" fill="none" stroke-linecap="round"/>
+                <path d="M16 50 Q24 78 16 100" stroke="#8a6239" stroke-width="15" fill="none" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </div>
+          <div class="textbar">Little Mo had never seen the ground before. It didn't sway. It didn't rustle. It just sat there, being enormous, and being the ground.</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 8: LOST FEELING -->
+      <div class="page" data-mode="light">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s8" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fae7c"/><stop offset="1" stop-color="#5b7a4a"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s8)"/>
+              <circle cx="400" cy="120" r="90" fill="#cdeaff" opacity="0.5"/>
+              <path d="M0 430 Q400 400 800 430 L800 500 L0 500 Z" fill="#4a3a22"/>
+              <g stroke="#3a5a2c" stroke-width="60" stroke-linecap="round" opacity="0.8">
+                <line x1="90" y1="0" x2="90" y2="430"/><line x1="710" y1="0" x2="710" y2="430"/><line x1="400" y1="0" x2="400" y2="60"/>
+              </g>
+              <g transform="translate(400,380) scale(0.9)">
+                <ellipse cx="0" cy="30" rx="30" ry="36" fill="#8a6239"/>
+                <circle cx="0" cy="-24" r="28" fill="#8a6239"/>
+                <circle cx="-22" cy="-32" r="9" fill="#8a6239"/><circle cx="22" cy="-32" r="9" fill="#8a6239"/>
+                <ellipse cx="0" cy="-12" rx="13" ry="10" fill="#eddcb8"/>
+                <circle cx="-8" cy="-26" r="3.4" fill="#20140a"/><circle cx="8" cy="-26" r="3.4" fill="#20140a"/>
+                <path d="M-8 0 Q0 8 8 0" stroke="#20140a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M-26 0 Q-40 6 -38 24" stroke="#8a6239" stroke-width="12" fill="none" stroke-linecap="round"/>
+                <path d="M26 0 Q40 6 38 24" stroke="#8a6239" stroke-width="12" fill="none" stroke-linecap="round"/>
+                <path d="M-14 58 Q-20 80 -14 96" stroke="#8a6239" stroke-width="13" fill="none" stroke-linecap="round"/>
+                <path d="M14 58 Q20 80 14 96" stroke="#8a6239" stroke-width="13" fill="none" stroke-linecap="round"/>
+              </g>
+              <path d="M370 400 q30 -14 60 0" stroke="#fff8e6" stroke-width="2" fill="none" opacity="0.7"/>
+            </svg>
+          </div>
+          <div class="textbar">Little Mo looked up. The canopy was so far away it looked like a green sky. "I'm lost," Little Mo whispered. "The ground ate the whole world."</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 9: SCARY -->
+      <div class="page" data-mode="dark">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s9" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141634"/><stop offset="1" stop-color="#2e2350"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s9)"/>
+              <g stroke="#0d0e22" stroke-width="55" stroke-linecap="round" opacity="0.9">
+                <line x1="80" y1="0" x2="80" y2="500"/><line x1="720" y1="0" x2="720" y2="500"/><line x1="260" y1="0" x2="260" y2="500"/><line x1="540" y1="0" x2="540" y2="500"/>
+              </g>
+              <path d="M0 440 Q400 400 800 440 L800 500 L0 500 Z" fill="#0d0e22"/>
+              <g fill="#ffe066">
+                <ellipse cx="330" cy="150" rx="9" ry="14"/><ellipse cx="366" cy="150" rx="9" ry="14"/>
+                <ellipse cx="560" cy="260" rx="7" ry="11"/><ellipse cx="586" cy="262" rx="7" ry="11"/>
+              </g>
+              <g transform="translate(400,390) scale(0.8)">
+                <ellipse cx="0" cy="22" rx="30" ry="38" fill="#8a6239"/>
+                <circle cx="0" cy="-22" r="26" fill="#8a6239"/>
+                <circle cx="-20" cy="-30" r="8" fill="#8a6239"/><circle cx="20" cy="-30" r="8" fill="#8a6239"/>
+                <ellipse cx="0" cy="-10" rx="12" ry="9" fill="#eddcb8"/>
+                <circle cx="-7" cy="-24" r="4.4" fill="#20140a"/><circle cx="7" cy="-24" r="4.4" fill="#20140a"/>
+                <ellipse cx="0" cy="2" rx="6" ry="7" fill="#20140a"/>
+                <path d="M-24 -8 Q-40 -2 -46 -22" stroke="#8a6239" stroke-width="11" fill="none" stroke-linecap="round"/>
+                <path d="M24 -8 Q40 -2 46 -22" stroke="#8a6239" stroke-width="11" fill="none" stroke-linecap="round"/>
+                <path d="M-13 54 Q-18 74 -12 90" stroke="#8a6239" stroke-width="12" fill="none" stroke-linecap="round"/>
+                <path d="M13 54 Q18 74 12 90" stroke="#8a6239" stroke-width="12" fill="none" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </div>
+          <div class="textbar">As the light dripped away, eyes bloomed in the dark like little yellow moons. Little Mo froze, heart pounding like a drum with no song.</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 10: BAD (thorns) -->
+      <div class="page" data-mode="dark">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s10" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a2c2c"/><stop offset="1" stop-color="#231313"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s10)"/>
+              <path d="M0 440 Q400 410 800 440 L800 500 L0 500 Z" fill="#1b0f0f"/>
+              <g stroke="#111" stroke-width="6" fill="none">
+                <path d="M300 500 Q320 380 260 300 Q380 340 400 240"/>
+                <path d="M520 500 Q500 400 560 320 Q460 330 460 220"/>
+              </g>
+              <g fill="#111">
+                <path d="M310 400 l14 -10 l-4 16Z"/><path d="M280 340 l16 -6 l-8 16Z"/><path d="M540 380 l-14 -10 l4 16Z"/><path d="M500 300 l-16 -6 l8 16Z"/><path d="M360 260 l14 -8 l-2 16Z"/>
+              </g>
+              <g transform="translate(400,360) scale(0.85)">
+                <ellipse cx="0" cy="22" rx="30" ry="38" fill="#8a6239"/>
+                <circle cx="0" cy="-22" r="26" fill="#8a6239"/>
+                <circle cx="-20" cy="-30" r="8" fill="#8a6239"/><circle cx="20" cy="-30" r="8" fill="#8a6239"/>
+                <ellipse cx="0" cy="-10" rx="12" ry="9" fill="#eddcb8"/>
+                <circle cx="-7" cy="-24" r="3.4" fill="#20140a"/><circle cx="7" cy="-24" r="3.4" fill="#20140a"/>
+                <path d="M-8 0 Q0 -6 8 0" stroke="#20140a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M-24 -8 Q-52 -20 -50 -46" stroke="#8a6239" stroke-width="11" fill="none" stroke-linecap="round"/>
+                <path d="M24 -8 Q46 -4 42 18" stroke="#8a6239" stroke-width="11" fill="none" stroke-linecap="round"/>
+                <path d="M-13 54 Q-24 72 -34 88" stroke="#8a6239" stroke-width="12" fill="none" stroke-linecap="round"/>
+                <path d="M13 54 Q18 74 12 90" stroke="#8a6239" stroke-width="12" fill="none" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </div>
+          <div class="textbar">A tangle of thorns grabbed at Little Mo's fur and would not let go, no matter how hard it pulled.</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 11: GOOD (tortoise helps) -->
+      <div class="page" data-mode="light">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s11" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe3d6"/><stop offset="1" stop-color="#e9c46a"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s11)"/>
+              <path d="M0 430 Q400 400 800 430 L800 500 L0 500 Z" fill="#8a6239"/>
+              <g stroke="#5a4a2c" stroke-width="4" fill="none" opacity="0.6"><path d="M280 420 Q320 340 260 280"/><path d="M520 420 Q490 360 550 300"/></g>
+              <g transform="translate(400,370) scale(0.85)">
+                <ellipse cx="0" cy="22" rx="30" ry="38" fill="#8a6239"/>
+                <circle cx="0" cy="-22" r="26" fill="#8a6239"/>
+                <circle cx="-20" cy="-30" r="8" fill="#8a6239"/><circle cx="20" cy="-30" r="8" fill="#8a6239"/>
+                <ellipse cx="0" cy="-10" rx="12" ry="9" fill="#eddcb8"/>
+                <circle cx="-7" cy="-24" r="3.4" fill="#20140a"/><circle cx="7" cy="-24" r="3.4" fill="#20140a"/>
+                <path d="M-8 -2 Q0 4 8 -2" stroke="#20140a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M-24 -6 Q-44 2 -46 24" stroke="#8a6239" stroke-width="11" fill="none" stroke-linecap="round"/>
+                <path d="M24 -6 Q40 -2 36 20" stroke="#8a6239" stroke-width="11" fill="none" stroke-linecap="round"/>
+                <path d="M-13 54 Q-20 76 -14 92" stroke="#8a6239" stroke-width="12" fill="none" stroke-linecap="round"/>
+                <path d="M13 54 Q20 76 14 92" stroke="#8a6239" stroke-width="12" fill="none" stroke-linecap="round"/>
+              </g>
+              <g transform="translate(510,420)">
+                <ellipse cx="0" cy="0" rx="55" ry="34" fill="#4c9a4a"/>
+                <ellipse cx="0" cy="0" rx="55" ry="34" fill="none" stroke="#2f6b3c" stroke-width="4"/>
+                <path d="M-40 0 L40 0 M-24 -22 L-10 0 M24 -22 L10 0 M-24 22 L-10 0 M24 22 L10 0" stroke="#2f6b3c" stroke-width="3"/>
+                <ellipse cx="60" cy="4" rx="16" ry="12" fill="#7a9c5c"/>
+                <circle cx="70" cy="0" r="2.4" fill="#20140a"/>
+                <path d="M-55 6 q-10 6 -18 2" stroke="#7a9c5c" stroke-width="8" fill="none" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </div>
+          <div class="textbar">A slow, round shadow ambled closer. "Hold still," said the tortoise, and gently, patiently, worked the thorns loose one by one.</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 12: FRIENDLY (stream) -->
+      <div class="page" data-mode="light">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s12" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cdeaff"/><stop offset="1" stop-color="#8fd672"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s12)"/>
+              <path d="M0 300 Q400 260 800 300 L800 500 L0 500 Z" fill="#3a7ca5"/>
+              <path d="M0 320 Q400 280 800 320" stroke="#86c5d8" stroke-width="10" fill="none" opacity="0.7"/>
+              <g fill="#c9b48a"><ellipse cx="230" cy="330" rx="28" ry="14"/><ellipse cx="360" cy="350" rx="26" ry="13"/><ellipse cx="500" cy="335" rx="30" ry="14"/><ellipse cx="620" cy="355" rx="24" ry="12"/></g>
+              <g transform="translate(500,300) scale(0.8)">
+                <ellipse cx="0" cy="22" rx="30" ry="38" fill="#8a6239"/>
+                <circle cx="0" cy="-22" r="26" fill="#8a6239"/>
+                <circle cx="-20" cy="-30" r="8" fill="#8a6239"/><circle cx="20" cy="-30" r="8" fill="#8a6239"/>
+                <ellipse cx="0" cy="-10" rx="12" ry="9" fill="#eddcb8"/>
+                <circle cx="-7" cy="-24" r="3.4" fill="#20140a"/><circle cx="7" cy="-24" r="3.4" fill="#20140a"/>
+                <path d="M-9 -4 Q0 6 9 -4" stroke="#20140a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+                <path d="M-24 -6 Q-48 -18 -44 -44" stroke="#8a6239" stroke-width="11" fill="none" stroke-linecap="round"/>
+                <path d="M24 -6 Q42 -4 40 20" stroke="#8a6239" stroke-width="11" fill="none" stroke-linecap="round"/>
+                <path d="M-13 54 Q-8 78 4 96" stroke="#8a6239" stroke-width="12" fill="none" stroke-linecap="round"/>
+                <path d="M13 54 Q22 76 14 92" stroke="#8a6239" stroke-width="12" fill="none" stroke-linecap="round"/>
+              </g>
+              <g transform="translate(410,340)">
+                <ellipse cx="0" cy="0" rx="34" ry="22" fill="#4c9a4a"/>
+                <ellipse cx="0" cy="0" rx="34" ry="22" fill="none" stroke="#2f6b3c" stroke-width="3"/>
+                <ellipse cx="36" cy="2" rx="10" ry="8" fill="#7a9c5c"/>
+                <circle cx="42" cy="-1" r="1.8" fill="#20140a"/>
+              </g>
+            </svg>
+          </div>
+          <div class="textbar">They hopped across the stream stone by stone, and for a moment, Little Mo almost forgot to be scared.</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 13: CHALLENGING (vine bridge, storm approaching) -->
+      <div class="page" data-mode="dark">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s13" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3d5c"/><stop offset="1" stop-color="#4a4e69"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s13)"/>
+              <polygon points="640,40 600,120 630,120 590,190 660,110 630,110" fill="#f2e94e" opacity="0.9"/>
+              <path d="M0 260 Q400 380 800 260 L800 500 L0 500 Z" fill="#14161f"/>
+              <path d="M40 220 Q400 150 760 220" stroke="#5a4a2c" stroke-width="10" fill="none"/>
+              <g stroke="#5a4a2c" stroke-width="4">
+                <line x1="120" y1="222" x2="130" y2="180"/><line x1="260" y1="200" x2="270" y2="160"/><line x1="400" y1="192" x2="400" y2="150"/><line x1="540" y1="200" x2="530" y2="160"/><line x1="680" y1="222" x2="670" y2="180"/>
+              </g>
+              <g transform="translate(400,195) scale(0.72)">
+                <ellipse cx="0" cy="22" rx="30" ry="38" fill="#8a6239"/>
+                <circle cx="0" cy="-22" r="26" fill="#8a6239"/>
+                <circle cx="-20" cy="-30" r="8" fill="#8a6239"/><circle cx="20" cy="-30" r="8" fill="#8a6239"/>
+                <ellipse cx="0" cy="-10" rx="12" ry="9" fill="#eddcb8"/>
+                <circle cx="-7" cy="-24" r="4" fill="#20140a"/><circle cx="7" cy="-24" r="4" fill="#20140a"/>
+                <ellipse cx="0" cy="0" rx="6" ry="7" fill="#20140a"/>
+                <path d="M-24 -8 Q-44 -22 -40 -46" stroke="#8a6239" stroke-width="11" fill="none" stroke-linecap="round"/>
+                <path d="M24 -8 Q44 -22 40 -46" stroke="#8a6239" stroke-width="11" fill="none" stroke-linecap="round"/>
+                <path d="M-13 54 Q-20 76 -12 92" stroke="#8a6239" stroke-width="12" fill="none" stroke-linecap="round"/>
+                <path d="M13 54 Q20 76 12 92" stroke="#8a6239" stroke-width="12" fill="none" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </div>
+          <div class="textbar">Then the sky rumbled. A vine bridge swayed over a deep, hungry ravine — the only way toward home.</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 14: THE BIND -->
+      <div class="page" data-mode="dark">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s14" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141634"/><stop offset="1" stop-color="#14213d"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s14)"/>
+              <polygon points="180,20 130,130 170,130 110,240 210,120 170,120" fill="#f2e94e"/>
+              <path d="M0 380 Q400 440 800 380 L800 500 L0 500 Z" fill="#05060d"/>
+              <path d="M60 220 Q400 150 740 220" stroke="#5a4a2c" stroke-width="9" fill="none"/>
+              <path d="M340 220 Q400 260 460 224" stroke="#5a4a2c" stroke-width="6" fill="none" stroke-dasharray="6 6"/>
+              <g stroke="#dbe4ee" stroke-width="2" opacity="0.5"><line x1="120" y1="0" x2="90" y2="60"/><line x1="620" y1="0" x2="650" y2="55"/><line x1="500" y1="10" x2="480" y2="70"/></g>
+              <path d="M400 224 L392 300" stroke="#5a4a2c" stroke-width="7"/>
+              <g transform="translate(392,330) scale(0.72)">
+                <ellipse cx="0" cy="10" rx="26" ry="32" fill="#8a6239"/>
+                <circle cx="0" cy="-32" r="24" fill="#8a6239"/>
+                <circle cx="-18" cy="-40" r="7" fill="#8a6239"/><circle cx="18" cy="-40" r="7" fill="#8a6239"/>
+                <ellipse cx="0" cy="-22" rx="11" ry="8" fill="#eddcb8"/>
+                <circle cx="-6" cy="-34" r="4" fill="#20140a"/><circle cx="6" cy="-34" r="4" fill="#20140a"/>
+                <ellipse cx="0" cy="-14" rx="6" ry="7" fill="#20140a"/>
+                <path d="M-22 -46 Q-10 -80 6 -96" stroke="#8a6239" stroke-width="10" fill="none" stroke-linecap="round"/>
+                <path d="M22 -46 Q34 -70 24 -96" stroke="#8a6239" stroke-width="10" fill="none" stroke-linecap="round"/>
+                <path d="M-12 40 Q-16 60 -8 76" stroke="#8a6239" stroke-width="11" fill="none" stroke-linecap="round"/>
+                <path d="M12 40 Q16 60 8 76" stroke="#8a6239" stroke-width="11" fill="none" stroke-linecap="round"/>
+              </g>
+              <g fill="#ffe066"><ellipse cx="560" cy="270" rx="8" ry="12"/><ellipse cx="584" cy="272" rx="8" ry="12"/></g>
+            </svg>
+          </div>
+          <div class="textbar">Thunder cracked. The bridge bucked. Little Mo's small hands slipped — and the ground so far below opened its mouth.</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 15: REALIZATION -->
+      <div class="page" data-mode="dark">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s15" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2d42"/><stop offset="1" stop-color="#7a5a2c"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s15)"/>
+              <circle cx="400" cy="90" r="120" fill="#ffb703" opacity="0.35"/>
+              <path d="M60 200 Q400 130 740 200" stroke="#5a4a2c" stroke-width="9" fill="none"/>
+              <path d="M400 204 L390 320" stroke="#5a4a2c" stroke-width="6"/>
+              <g transform="translate(390,350) scale(0.75)">
+                <ellipse cx="0" cy="10" rx="26" ry="32" fill="#8a6239"/>
+                <circle cx="0" cy="-32" r="24" fill="#8a6239"/>
+                <circle cx="-18" cy="-40" r="7" fill="#8a6239"/><circle cx="18" cy="-40" r="7" fill="#8a6239"/>
+                <ellipse cx="0" cy="-24" rx="11" ry="8" fill="#eddcb8"/>
+                <circle cx="-6" cy="-38" r="3.6" fill="#20140a"/><circle cx="6" cy="-38" r="3.6" fill="#20140a"/>
+                <path d="M-6 -18 Q0 -12 6 -18" stroke="#20140a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M-22 -46 Q-8 -74 4 -92" stroke="#8a6239" stroke-width="10" fill="none" stroke-linecap="round"/>
+                <path d="M22 -46 Q10 -68 -2 -90" stroke="#8a6239" stroke-width="10" fill="none" stroke-linecap="round"/>
+                <path d="M-12 40 Q-16 60 -8 76" stroke="#8a6239" stroke-width="11" fill="none" stroke-linecap="round"/>
+                <path d="M12 40 Q16 60 8 76" stroke="#8a6239" stroke-width="11" fill="none" stroke-linecap="round"/>
+              </g>
+              <path d="M0 420 Q400 460 800 420 L800 500 L0 500 Z" fill="#0d0e22"/>
+            </svg>
+          </div>
+          <div class="textbar">Something in Little Mo's chest remembered Koba's voice: "I am always closer than you think." Little Mo looked up — really looked — and called out: "Koba!"</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 16: REVEAL & RESCUE -->
+      <div class="page" data-mode="dark">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s16" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb703"/><stop offset="1" stop-color="#4a3f2c"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s16)"/>
+              <path d="M40 150 Q400 90 760 150" stroke="#5a4a2c" stroke-width="10" fill="none"/>
+              <g fill="#3f8a4c" opacity="0.9"><circle cx="140" cy="130" r="60"/><circle cx="660" cy="120" r="65"/></g>
+              <!-- parent reaching down from branch -->
+              <g transform="translate(420,160) scale(1.0)">
+                <ellipse cx="0" cy="10" rx="34" ry="40" fill="#4a3728"/>
+                <circle cx="0" cy="-34" r="28" fill="#4a3728"/>
+                <circle cx="-22" cy="-44" r="9" fill="#4a3728"/><circle cx="22" cy="-44" r="9" fill="#4a3728"/>
+                <ellipse cx="0" cy="-26" rx="13" ry="9" fill="#d9b98a"/>
+                <circle cx="-8" cy="-38" r="3.2" fill="#20140a"/><circle cx="8" cy="-38" r="3.2" fill="#20140a"/>
+                <path d="M-30 0 Q-70 40 -95 140" stroke="#4a3728" stroke-width="15" fill="none" stroke-linecap="round"/>
+                <path d="M30 -4 Q50 -10 60 -30" stroke="#4a3728" stroke-width="15" fill="none" stroke-linecap="round"/>
+                <path d="M-16 44 Q-24 66 -16 86" stroke="#4a3728" stroke-width="16" fill="none" stroke-linecap="round"/>
+                <path d="M16 44 Q24 66 16 86" stroke="#4a3728" stroke-width="16" fill="none" stroke-linecap="round"/>
+              </g>
+              <!-- kid caught mid-air by the reaching arm -->
+              <g transform="translate(335,300) scale(0.7)">
+                <ellipse cx="0" cy="10" rx="26" ry="32" fill="#8a6239"/>
+                <circle cx="0" cy="-32" r="24" fill="#8a6239"/>
+                <circle cx="-18" cy="-40" r="7" fill="#8a6239"/><circle cx="18" cy="-40" r="7" fill="#8a6239"/>
+                <ellipse cx="0" cy="-22" rx="11" ry="8" fill="#eddcb8"/>
+                <circle cx="-6" cy="-36" r="3.6" fill="#20140a"/><circle cx="6" cy="-36" r="3.6" fill="#20140a"/>
+                <path d="M-7 -12 Q0 -4 7 -12" stroke="#20140a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M-22 -44 Q0 -60 20 -50" stroke="#8a6239" stroke-width="10" fill="none" stroke-linecap="round"/>
+                <path d="M22 -46 Q40 -50 44 -70" stroke="#8a6239" stroke-width="10" fill="none" stroke-linecap="round"/>
+                <path d="M-12 40 Q-16 60 -8 76" stroke="#8a6239" stroke-width="11" fill="none" stroke-linecap="round"/>
+                <path d="M12 40 Q16 60 8 76" stroke="#8a6239" stroke-width="11" fill="none" stroke-linecap="round"/>
+              </g>
+              <g stroke="#fff8e6" stroke-width="2" opacity="0.5"><line x1="500" y1="60" x2="490" y2="100"/><line x1="220" y1="200" x2="212" y2="240"/></g>
+            </svg>
+          </div>
+          <div class="textbar">From the branch that had been there the entire time, a long strong arm reached down through the rain and caught Little Mo, just like that.</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 17: REUNION -->
+      <div class="page" data-mode="light">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s17" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe6a7"/><stop offset="1" stop-color="#8fd672"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s17)"/>
+              <circle cx="640" cy="120" r="70" fill="#fff3b0" opacity="0.85"/>
+              <path d="M0 420 Q400 380 800 420 L800 500 L0 500 Z" fill="#3f8a4c"/>
+              <path d="M-20 260 Q400 200 820 260" stroke="#5a3620" stroke-width="26" fill="none" stroke-linecap="round"/>
+              <g transform="translate(400,320) scale(1.05)">
+                <ellipse cx="0" cy="30" rx="42" ry="46" fill="#4a3728"/>
+                <circle cx="0" cy="-20" r="30" fill="#4a3728"/>
+                <circle cx="-24" cy="-30" r="9" fill="#4a3728"/><circle cx="24" cy="-30" r="9" fill="#4a3728"/>
+                <ellipse cx="0" cy="-10" rx="13" ry="9" fill="#d9b98a"/>
+                <circle cx="-8" cy="-24" r="3.4" fill="#20140a"/><circle cx="8" cy="-24" r="3.4" fill="#20140a"/>
+                <path d="M-8 -2 Q0 6 8 -2" stroke="#20140a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M-38 10 Q-60 26 -30 46" stroke="#4a3728" stroke-width="16" fill="none" stroke-linecap="round"/>
+                <path d="M38 10 Q60 26 30 46" stroke="#4a3728" stroke-width="16" fill="none" stroke-linecap="round"/>
+              </g>
+              <g transform="translate(400,330) scale(0.72)">
+                <ellipse cx="0" cy="20" rx="30" ry="34" fill="#8a6239"/>
+                <circle cx="0" cy="-24" r="24" fill="#8a6239"/>
+                <ellipse cx="0" cy="-14" rx="10" ry="8" fill="#eddcb8"/>
+                <circle cx="-6" cy="-26" r="3" fill="#20140a"/><circle cx="6" cy="-26" r="3" fill="#20140a"/>
+                <path d="M-6 -6 Q0 0 6 -6" stroke="#20140a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </div>
+          <div class="textbar">"You were there the whole time?" Little Mo asked. "The whole time," said Koba. "I never once looked away."</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 18: CLOSING -->
+      <div class="page" data-mode="light">
+        <div class="face front">
+          <div class="illustration">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+              <defs><linearGradient id="s18" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd166"/><stop offset="0.5" stop-color="#f4a261"/><stop offset="1" stop-color="#2f6b3c"/></linearGradient></defs>
+              <rect width="800" height="500" fill="url(#s18)"/>
+              <circle cx="640" cy="110" r="66" fill="#fff3b0" opacity="0.85"/>
+              <path d="M0 400 Q400 350 800 400 L800 500 L0 500 Z" fill="#1f4d2a"/>
+              <path d="M-20 260 Q400 210 820 265" stroke="#3b2415" stroke-width="26" fill="none" stroke-linecap="round"/>
+              <g fill="#3f8a4c" opacity="0.9"><circle cx="120" cy="230" r="60"/><circle cx="700" cy="220" r="70"/></g>
+              <g transform="translate(320,300)">
+                <ellipse cx="0" cy="22" rx="34" ry="42" fill="#4a3728"/>
+                <circle cx="-24" cy="-36" r="10" fill="#4a3728"/><circle cx="24" cy="-36" r="10" fill="#4a3728"/>
+                <circle cx="0" cy="-28" r="30" fill="#4a3728"/>
+                <ellipse cx="0" cy="-16" rx="14" ry="10" fill="#d9b98a"/>
+                <circle cx="-8" cy="-30" r="3" fill="#20140a"/><circle cx="8" cy="-30" r="3" fill="#20140a"/>
+                <path d="M-8 -10 Q0 -4 8 -10" stroke="#20140a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M-30 0 Q-58 12 -56 44" stroke="#4a3728" stroke-width="14" fill="none" stroke-linecap="round"/>
+                <path d="M30 0 Q56 12 54 44" stroke="#4a3728" stroke-width="14" fill="none" stroke-linecap="round"/>
+              </g>
+              <g transform="translate(420,290) scale(0.68)">
+                <ellipse cx="0" cy="22" rx="34" ry="42" fill="#8a6239"/>
+                <circle cx="-24" cy="-36" r="10" fill="#8a6239"/><circle cx="24" cy="-36" r="10" fill="#8a6239"/>
+                <circle cx="0" cy="-28" r="30" fill="#8a6239"/>
+                <ellipse cx="0" cy="-16" rx="14" ry="10" fill="#eddcb8"/>
+                <circle cx="-8" cy="-30" r="3" fill="#20140a"/><circle cx="8" cy="-30" r="3" fill="#20140a"/>
+                <path d="M-9 -8 Q0 4 9 -8" stroke="#20140a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M-30 -2 Q-10 30 -60 50" stroke="#8a6239" stroke-width="14" fill="none" stroke-linecap="round"/>
+                <path d="M30 -2 Q56 12 54 44" stroke="#8a6239" stroke-width="14" fill="none" stroke-linecap="round"/>
+              </g>
+              <g transform="translate(500,420) scale(0.4)">
+                <ellipse cx="0" cy="0" rx="55" ry="34" fill="#4c9a4a"/>
+                <ellipse cx="60" cy="4" rx="16" ry="12" fill="#7a9c5c"/>
+              </g>
+            </svg>
+          </div>
+          <div class="textbar">Now when Little Mo looks down at the ground, it isn't scary anymore. It's just the place that taught them how far a parent's love can reach.</div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+      <!-- 19: THE END -->
+      <div class="page" data-mode="light">
+        <div class="face front">
+          <div class="end-page" style="height:100%;">
+            <svg class="vine" viewBox="0 0 120 24"><path d="M0 12 Q30 0 60 12 T120 12" stroke="#2f6b3c" stroke-width="3" fill="none"/><circle cx="15" cy="7" r="4" fill="#4c9a4a"/><circle cx="60" cy="12" r="4" fill="#4c9a4a"/><circle cx="105" cy="7" r="4" fill="#4c9a4a"/></svg>
+            <h2>The End</h2>
+            <p class="colophon">Copyright &copy; 2026. This book (text, illustrations, and code) is free software/culture: you may copy, share, and remix it under the terms of the <a href="LICENSE">GNU Affero General Public License, version 3 or later</a>.</p>
+          </div>
+        </div>
+        <div class="face back"></div>
+      </div>
+
+    </div>
+    <button class="nav prev" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" aria-label="Next page">&#8250;</button>
+    <div class="hud">
+      <div class="dots"></div>
+      <div class="counter">1 / 20</div>
+    </div>
+    <div class="hint">Use ← → arrow keys, swipe, or click the arrows to turn pages</div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
