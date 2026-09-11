@@ -8,6 +8,8 @@ real danger, that their parent Koba was watching over them the entire time.
 Flip through it page by page with the on-screen arrows, the arrow keys, or a
 swipe.
 
+**Read it live:** https://webdawg.github.io/9/
+
 ## Reading it
 
 Open `index.html` in any browser, or serve the folder locally:
